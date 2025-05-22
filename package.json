@@ -1,0 +1,29 @@
+{
+  "name": "web-core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@tinymce/tinymce-vue": "4.0.7",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.7.9",
+    "clipboard": "^2.0.11",
+    "codemirror": "^6.0.1",
+    "tinymce": "6.6.2",
+    "vue": "^3.5.13",
+    "vue-codemirror": "^6.1.1",
+    "vue-router": "4",
+    "vue3-json-viewer": "^2.2.2",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.1"
+  }
+}
