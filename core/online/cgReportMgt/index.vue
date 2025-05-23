@@ -93,7 +93,7 @@ import {
 import { DownOutlined, ExclamationCircleOutlined } from "@ant-design/icons-vue";
 import { reactive, ref, createVNode, watchEffect } from "vue";
 
-import Table from "@core/libs/table/Table.vue";
+import { Table } from "../../libs";
 import Edit from "./edit/Edit.vue";
 import {
   cgreportHeadListApi,

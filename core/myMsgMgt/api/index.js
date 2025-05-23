@@ -1,4 +1,4 @@
-import Axios from "@core/axios/Axios";
+import Axios from "../../axios/Axios";
 
 export const sysGetMyAnnouncementSendApi = (params) =>
   Axios({

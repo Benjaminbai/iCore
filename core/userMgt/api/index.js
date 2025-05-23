@@ -1,4 +1,4 @@
-import Axios, { baseURL } from "@core/axios/Axios";
+import Axios, { baseURL } from "../../axios/Axios";
 
 export const sysUserListAllApi = (params) =>
   Axios({

@@ -10,8 +10,13 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@core": path.resolve(__dirname, "core"),
+      "@core": path.resolve(__dirname, "core/dist"),
       "@": path.resolve(__dirname, "src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: ["@core"],
     },
   },
 });

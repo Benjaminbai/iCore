@@ -1,12 +1,12 @@
 import { createApp } from "vue";
+import { router, syntheticRoutes, Axios } from "@core/index";
+import "@core/index.js.css";
 
 import App from "@/App.vue";
-import router from "@core/router/router";
-import { syntheticRoutes } from "@core/router/dynamic";
-import "@core/router/guard";
 import "@/style.css";
 
 const main = async () => {
+  Axios.defaults.baseURL = import.meta.env.VITE_GLOB_DOMAIN_URL;
   await syntheticRoutes();
   createApp(App).use(router).mount("#app");
 };

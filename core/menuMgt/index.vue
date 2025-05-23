@@ -90,7 +90,7 @@ import {
 import { DownOutlined } from "@ant-design/icons-vue";
 import { ref, reactive, watchEffect } from "vue";
 
-import Table from "@core/libs/table/Table.vue";
+import { Table } from "../libs";
 import Edit from "./Edit.vue";
 import { sysPermissionListApi, sysPermissionDeleteApi } from "./api";
 

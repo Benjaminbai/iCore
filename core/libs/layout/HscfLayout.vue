@@ -27,9 +27,7 @@ import {
 } from "ant-design-vue";
 import { ref } from "vue";
 import { RouterView } from "vue-router";
-import Logo from "@core/libs/logo/Logo.vue";
-import Menu from "@core/libs/menu/Menu.vue";
-import UserInfo from "@core/libs/userInfo/UserInfo.vue";
+import { Logo, Menu, UserInfo } from "../../libs";
 
 const collapsed = ref(false);
 </script>

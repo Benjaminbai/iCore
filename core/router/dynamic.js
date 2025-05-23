@@ -1,22 +1,21 @@
-import BlankLayout from "@core/libs/layout/BlankLayout.vue";
-import { getUserPermissionByTokenApi } from "@core/axios/User";
-import router from "./router";
+import { BlankLayout } from "../libs";
+import { getUserPermissionByTokenApi } from "../axios/User";
+import router from "./index";
 
 const componentLoader = (componentName) => {
   const componentMap = {
-    "@core/menuMgt/MenuMgt": () => import("@core/menuMgt/MenuMgt.vue"),
-    "@core/userMgt/UserMgt": () => import("@core/userMgt/UserMgt.vue"),
-    "@core/roleMgt/RoleMgt": () => import("@core/roleMgt/RoleMgt.vue"),
-    "@core/dictMgt/DictMgt": () => import("@core/dictMgt/DictMgt.vue"),
-    "@core/myMsgMgt/MyMsgMgt": () => import("@core/myMsgMgt/MyMsgMgt.vue"),
-    "@core/msgTempMgt/MsgTempMgt": () =>
-      import("@core/msgTempMgt/MsgTempMgt.vue"),
-    "@core/online/cgFormMgt/CgFormMgt": () =>
-      import("@core/online/cgFormMgt/CgFormMgt.vue"),
-    "@core/online/cgReportMgt/CgReportMgt": () =>
-      import("@core/online/cgReportMgt/CgReportMgt.vue"),
+    "@core/menuMgt/index": () => import("../menuMgt/index.vue"),
+    "@core/userMgt/index": () => import("../userMgt/index.vue"),
+    "@core/roleMgt/index": () => import("../roleMgt/index.vue"),
+    "@core/dictMgt/index": () => import("../dictMgt/index.vue"),
+    "@core/myMsgMgt/index": () => import("../myMsgMgt/index.vue"),
+    "@core/msgTempMgt/index": () => import("../msgTempMgt/index.vue"),
+    "@core/online/cgFormMgt/index": () =>
+      import("../online/cgFormMgt/index.vue"),
+    "@core/online/cgReportMgt/index": () =>
+      import("../online/cgReportMgt/index.vue"),
 
-    "@core/home/Home": () => import("@core/home/Home.vue"),
+    "@core/home/index": () => import("../home/index.vue"),
   };
   return componentMap[componentName];
 };

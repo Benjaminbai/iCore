@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import logo from "@/static/iqvia-logo-color.svg";
+import { logo } from "../../static";
 </script>
 
 <style scoped>

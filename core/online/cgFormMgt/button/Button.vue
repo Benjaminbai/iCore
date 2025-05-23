@@ -138,7 +138,7 @@ import {
 import { DownOutlined, ExclamationCircleOutlined } from "@ant-design/icons-vue";
 import { ref, onMounted, createVNode } from "vue";
 
-import FullModal from "@core/libs/fullModal/FullModal.vue";
+import { FullModal } from "../../../libs";
 import {
   cgformButtonListApi,
   cgformButtonAddApi,

@@ -36,7 +36,7 @@
 import { Row, Col, Tabs, TabPane } from "ant-design-vue";
 import { ref, provide } from "vue";
 
-import FullModal from "@core/libs/fullModal/FullModal.vue";
+import { FullModal } from "../../../libs";
 import Role from "./Role.vue";
 import User from "./User.vue";
 import Field from "./Field.vue";

@@ -36,7 +36,7 @@ import {
 import { UserOutlined } from "@ant-design/icons-vue";
 import { useRouter } from "vue-router";
 
-import { logoutApi } from "@core/axios/User";
+import { logoutApi } from "../../axios/User";
 
 const router = useRouter();
 const [messageApi, contextHolder] = message.useMessage();

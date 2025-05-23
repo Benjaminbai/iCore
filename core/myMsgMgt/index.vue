@@ -54,7 +54,7 @@ import { ref, reactive, watchEffect, createVNode } from "vue";
 import { ExclamationCircleOutlined } from "@ant-design/icons-vue";
 
 import Query from "./query/Query.vue";
-import Table from "@core/libs/table/Table.vue";
+import { Table } from "../libs";
 import {
   sysGetMyAnnouncementSendApi,
   sysAnnouncementSendReadAllApi,

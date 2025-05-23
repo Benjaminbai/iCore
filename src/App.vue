@@ -5,7 +5,7 @@
 
 <script setup>
 import { RouterView, useRoute } from "vue-router";
-import HscfLayout from "@core/libs/layout/HscfLayout.vue";
+import { HscfLayout } from "@core/index";
 
 const route = useRoute();
 </script>

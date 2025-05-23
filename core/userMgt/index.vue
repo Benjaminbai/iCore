@@ -126,7 +126,7 @@ import {
 import { DownOutlined, ExclamationCircleOutlined } from "@ant-design/icons-vue";
 import { watchEffect, provide, reactive, ref, createVNode, h } from "vue";
 
-import Table from "@core/libs/table/Table.vue";
+import { Table } from "../libs";
 import Query from "./query/Query.vue";
 import {
   sysUserListAllApi,

@@ -31,7 +31,7 @@
 import { message, Modal } from "ant-design-vue";
 import { reactive, ref, inject, watchEffect } from "vue";
 
-import Table from "@core/libs/table/Table.vue";
+import { Table } from "../../libs";
 import { sysUserListApi, sysUserAddSysUserRoleApi } from "../api";
 import Query from "./query/Query.vue";
 
